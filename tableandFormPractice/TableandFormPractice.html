@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Table and Form Practice
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        My Class Schedule
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Course Number</td>
+                <td>Course Name</td>
+                <td>Instructor's Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CSIT121</td>
+                <td>Web Standards</td>
+                <td>Veronica Noone</td>
+            </tr>
+            <tr>
+                <td>DCOM142</td>
+                <td>Introduction to Linux/UX</td>
+                <td>Alan Chin</td>
+            </tr>
+            <tr>
+                <td>CSIT212</td>
+                <td>Visual Programming</td>
+                <td>Fernando Paniagua</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="feedback-send" method="post" id="feedbackform">
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name required"><br>
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+        </p>
+        <p>
+            <textarea name="comment" form="feedbackform" placeholder="Leave your comment here" maxlength="1600" required></textarea>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+    <footer>
+        <p>Made by John Mindo</p>
+        <p><a href="mailto:johnmindo@outlook.com">johnmindo@outlook.com</a></p>
+    </footer>
+</body>
+</html>
