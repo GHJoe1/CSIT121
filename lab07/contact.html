@@ -9,13 +9,90 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1 class="title">Contact Me!</h1>
     </header>
-    <form id="contactForm">
+    <div class="navigation">
+        <ul>
+            <li><a href="tierlist.html">Back to Tier List</a></li>
+        </ul>
+    </div>
+    <form id="form">
         <h1>Contact Form</h1>
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required>
+        <p class="formElement">
+            <label for="name">Name: </label><br>
+            <input type="text" id="name" name="name" required><br>
+        </p>
+        <p class="formElement">
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email" required><br>
+        </p>
+        <p class="formElement">
+            <textarea name="comment" form="contactForm" placeholder="Got any feedback? Leave your comment here!" style="height: 200px"  maxlength="1600" required></textarea>
+        </p>
+        <p class="formElement">
+            <button type="submit">Submit</button>
+        </p>
     </form>
+    <form id="form">
+        <h1>Survey Time!</h1>
+        <p class="formElement">
+            <ol>
+                <p>
+                    <li>
+                        If you were only allowed to play the video games from a set in the tier list, which set would you go with?
+                    </li><br>
+                    <select id="cars" name="cars">
+                        <option value="Set 1">Set 1</option>
+                        <option value="Set 2">Set 2</option>
+                        <option value="Set 3">Set 3</option>
+                        <option value="Set 4">Set 4</option>
+                        <option value="Set 5">Set 5</option>
+                    </select>
+                </p><br>
+                <p>
+                    <li>
+                        Among the top 5 games on the tier list, which one do you think is the best? (If you don't know about them, pick which one interests you the most)
+                    </li><br>
+                      <input type="radio" id="acx" name="acx" value="acx">
+                      <label for="acx">Ace Combat: X</label><br>
+                      <input type="radio" id="fea" name="fea" value="fea">
+                      <label for="fea">Fire Emblem: Awakening</label><br>
+                      <input type="radio" id="gi" name="gi" value="gi">
+                      <label for="gi">Genshin Impact</label><br>
+                      <input type="radio" id="c6" name="c6" value="c6">
+                      <label for="c6">Civilization VI</label><br>
+                      <input type="radio" id="bg3" name="bg3" value="bg3">
+                      <label for="bg3">Baldurs Gate 3</label>
+                </p><br>
+                <p>
+                    <li>
+                        Around how much of the games do recognize from the tier list? Give an estimate!
+                    </li><br>
+                    <div class="slider">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <p>Recognition (%): <span id="demo"></span></p>
+                    <script>
+                        var slider = document.getElementById("myRange");
+                        var output = document.getElementById("demo");
+                        output.innerHTML = slider.value;
+                        
+                        slider.oninput = function() {
+                          output.innerHTML = this.value;
+                        }
+                    </script>
+                </p>
+            </ol>
+        </p>
+        <p class="formElement">
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+    <footer>
+        <p>Made by John Mindo</p>
+        <p><a href="mailto:johnmindo@outlook.com">johnmindo@outlook.com</a></p>
+    </footer>
 </body>
 </html>
