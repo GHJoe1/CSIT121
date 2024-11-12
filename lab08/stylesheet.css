@@ -1,0 +1,58 @@
+body 
+{
+    background-image: url(images/woodentable.jpg)
+}
+
+h1 
+{
+    background-color: white;
+}
+
+h2
+{
+    background-color: white;
+    color: rgb(247, 0, 255);
+}
+
+p
+{
+    background-color: white;
+}
+
+.imageSrc
+{
+    background-color: white;
+}
+
+.devastation
+{
+    color: red;
+    font-style: bold;
+}
+
+.navigation
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #b3ff00;
+}
+
+.navigation a
+{
+    float: left;
+    display: block;
+    color: #0037ff;
+    text-align: center;
+    padding: 4px;
+    margin: 1px;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.navigation a:hover
+{
+    background-color: #72a300;
+    color: rgb(255, 0, 208);
+}
