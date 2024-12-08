@@ -1,0 +1,147 @@
+.title
+{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td
+{
+    border: 1px solid;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+td
+{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.tdimg
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tiersplus
+{
+    background-color: pink;
+}
+
+.tiers
+{
+    background-color: orange;
+}
+
+.tiera
+{
+    background-color: yellow;
+}
+
+.tierb
+{
+    background-color: lightgreen;
+}
+
+.tierc
+{
+    background-color: lightskyblue;
+}
+
+
+h2
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reflection
+{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: pink;
+}
+
+.navigation
+{
+    text-align: center;
+    display: block;
+    background-color: pink;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+a
+{
+    font-size: 24px;
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: brown;
+}
+
+ul
+{
+    list-style: none;
+}
+
+#form
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75%;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: beige;
+}
+
+.formElement
+{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+footer
+{
+    text-align: center;
+}
+
+.slider
+{
+    width: 100%;
+    height: 25px;
+}
+
+.rickbot {
+    position:fixed;
+    right:0;
+    top: 10%;
+    margin:0;
+    width: 10%;
+    height: 10%;
+}

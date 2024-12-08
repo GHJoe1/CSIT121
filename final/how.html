@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        How is it used?
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab10.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Learn Geolocation API!</h1>
+    </div>
+    <div class="navbar">
+        <a href="what.html">What</a>
+        <a href="why.html">Why</a>
+        <a class="active" href="how.html">How</a>
+        <a href="sources.html">Sources</a>
+    </div>
+    <div class="stuff">
+        <h1>How is it used?</h1>
+        <p>
+            Geolocation API uses a device's signal via GPS,
+            cell towers, or Wi-Fi to retrieve its location with
+            latitude and longitude. JavaScript and its library are
+            used to drive such functions like the following code
+            snippet below.
+        </p>
+        <img src="images/geolocationapi.png" alt="A JavaScript snippet of code for Geolocation API">
+        <p>
+            This is an example of a programmed function taken from
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API">
+                MDN Web Docs
+            </a>
+            that would prompt a user if they would like to share their
+            location with a website upon clicking a button.
+        </p>
+        <p>The button below does just that (also taken from the website).</p>
+        <button id="find-me">Show my location</button><br />
+        <p id="status"></p>
+        <a id="map-link" target="_blank"></a>
+        <script>
+            function geoFindMe() {
+                const status = document.querySelector("#status");
+                const mapLink = document.querySelector("#map-link");
+      
+                mapLink.href = "";
+                mapLink.textContent = "";
+      
+                function success(position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+      
+                    status.textContent = "";
+                    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+                    mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+                }
+      
+                function error() {
+                    status.textContent = "Unable to retrieve your location";
+                }
+      
+                if (!navigator.geolocation) {
+                    status.textContent = "Geolocation is not supported by your browser";
+                } else {
+                    status.textContent = "Locating…";
+                navigator.geolocation.getCurrentPosition(success, error);
+                }
+            } 
+            document.querySelector("#find-me").addEventListener("click", geoFindMe);
+        </script>
+    </div>
+</body>
+</html>

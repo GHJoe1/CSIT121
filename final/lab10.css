@@ -1,0 +1,73 @@
+.title {
+    background-color: white;
+    text-align: center;
+    font-size: 32px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+body {
+    margin: 0;
+    background-image: url("images/background.jpg");
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.navbar a.active {
+    background-color: purple;
+    color: white;
+}
+
+.stuff {
+    background-color: white;
+    border-radius: 1cap;
+    border: 2px solid blue;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.stuff img {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+button {
+    margin: 0.5rem 0;
+}
+
+a {
+    word-wrap: break-word;
+}
+
+.rickbot {
+    position:fixed;
+    right:0;
+    top:0;
+    margin:0;
+    width: 20%;
+    height: 20%;
+}
